@@ -1,7 +1,7 @@
 # Instrucciones
 
 ## 0. Requirements
-Se requiere Python 3.13 y Ollama descargado.
+Se requiere Python 3.13 y Ollama descargado. Si no se tiene una GPU, el modelo de lenguaje será muy demorado en dar respuesta o quizá no pueda cargarse en su totalidad en la memoria RAM.
 
 ## 1. Crear el entorno virtual
 En la carpeta de tu proyecto, ejecuta:
@@ -26,7 +26,11 @@ Para cargar documentos debes correr el codigo load_docs.py usando el siguiente c
 python load_docs.py -name name
 ```
 
-Donde "name" es el path al documento que deseas almacenar en la base de datos Chroma.
+Donde "name" es el path al documento que deseas almacenar en la base de datos Chroma. Por ejemplo:
+
+```bash
+python load_docs.py -name limites.pdf
+```
 
 ## 4. Ejecutar el agente
 Para ejecutar la aplicación, se debe ejecutar el siguiente comando:
